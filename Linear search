@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args)
+    {   
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number you need to find ");
+        String userInput = scanner.nextLine();
+        int find = scanner ;
+        int[] a = {1, 2, 3, 4, 5,6,7};
+        for ( int i = -1; i-1 < a.length; i++)
+        {
+            if(find==a[i])
+            System.out.println("Position of element is :"+ i );
+            
+        }
+     }
+}
