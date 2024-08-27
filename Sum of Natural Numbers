@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class main{
+    public static int naturalnumber(int a)
+        {
+            if (a==1){
+                return 1;
+            }
+           else{
+            return a + naturalnumber(a-1) ;
+        }
+    }
+    public static void main(String[] args)
+    {   
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int x = sc.nextInt();
+        int sum= naturalnumber(x);
+        System.out.print("Sum of first natural number is:"+sum);
+
+    }
+}
