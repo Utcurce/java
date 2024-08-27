@@ -1,0 +1,27 @@
+import java.util.*;
+public class main{
+    public static void binarySearch(int x[],int find){
+        int n = x.length  , Least = 0 , Upper = x.length - 1, flag = 0,Middle;
+        while(Least <= Upper){
+            Middle= (Least+Upper)/2;
+            if(x[Middle]==find){
+            flag = 1;
+            break;
+             }
+            if(x[Middle]>find)
+            Upper = Middle-1;
+            else
+            Least=Middle+1;        
+        }
+     if(flag==1)
+        System.out.println("Yes Found");
+     else
+        System.out.println("Not Found");
+    }
+
+    public static void main(String[] args){
+        int[] arr = {1,9,19,29,39,49,59,69,79,89,99};
+        int k = 8;
+        binarySearch(arr,k);
+    }
+}
