@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class main {
+    int flag = 0;
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the element to search: ");
+        int search = scanner.nextInt();
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == target) {
+                flag = 0; 
+            }
+        }
+        flag = -1;
+        int index = flag ; 
+        if (index != -1) {
+            System.out.println("Element found at index: " + index);
+        } else {
+            System.out.println("Element not found in the array.");
+        }
+    }
+   
+        
+    
+}
